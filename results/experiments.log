@@ -1,0 +1,234 @@
+# TEMPERATURE / VOLTAGE
+# device: blocks=6 stable_cells=1530 secret_bits=282 t=32
+# --- temperature sweep at 3.3 V, 10 attempts each ---
+CSV,temp,-40.0,1.000,10,10
+  T= -40.0 C :  10/10 = 100.0%
+CSV,temp,-20.0,1.000,10,10
+  T= -20.0 C :  10/10 = 100.0%
+CSV,temp,0.0,1.000,10,10
+  T=   0.0 C :  10/10 = 100.0%
+CSV,temp,25.0,1.000,10,10
+  T=  25.0 C :  10/10 = 100.0%
+CSV,temp,45.0,1.000,10,10
+  T=  45.0 C :  10/10 = 100.0%
+CSV,temp,65.0,1.000,10,10
+  T=  65.0 C :  10/10 = 100.0%
+CSV,temp,85.0,1.000,10,10
+  T=  85.0 C :  10/10 = 100.0%
+CSV,temp,105.0,1.000,10,10
+  T= 105.0 C :  10/10 = 100.0%
+CSV,temp,125.0,1.000,10,10
+  T= 125.0 C :  10/10 = 100.0%
+# --- voltage sweep at 25 C, 10 attempts each ---
+CSV,volt,2.60,1.000,10,10
+  V=2.60 V :  10/10 = 100.0%
+CSV,volt,2.80,1.000,10,10
+  V=2.80 V :  10/10 = 100.0%
+CSV,volt,3.00,1.000,10,10
+  V=3.00 V :  10/10 = 100.0%
+CSV,volt,3.30,1.000,10,10
+  V=3.30 V :  10/10 = 100.0%
+CSV,volt,3.60,1.000,10,10
+  V=3.60 V :  10/10 = 100.0%
+CSV,volt,3.80,1.000,10,10
+  V=3.80 V :  10/10 = 100.0%
+# --- joint hot + low voltage, 10 attempts each ---
+CSV,joint,65.0,2.80,1.000
+  T= 65.0 C V=2.80 :  10/10
+CSV,joint,65.0,3.00,1.000
+  T= 65.0 C V=3.00 :  10/10
+CSV,joint,85.0,2.80,1.000
+  T= 85.0 C V=2.80 :  10/10
+CSV,joint,85.0,3.00,1.000
+  T= 85.0 C V=3.00 :  10/10
+CSV,joint,105.0,2.80,1.000
+  T=105.0 C V=2.80 :  10/10
+CSV,joint,105.0,3.00,1.000
+  T=105.0 C V=3.00 :  10/10
+# AGING
+# --- age sweep at 25 C ---
+CSV,age,0.0,1.000,10,10
+  age= 0.0 y :  10/10 = 100.0%
+CSV,age,1.0,1.000,10,10
+  age= 1.0 y :  10/10 = 100.0%
+CSV,age,2.0,1.000,10,10
+  age= 2.0 y :  10/10 = 100.0%
+CSV,age,3.0,1.000,10,10
+  age= 3.0 y :  10/10 = 100.0%
+CSV,age,5.0,1.000,10,10
+  age= 5.0 y :  10/10 = 100.0%
+CSV,age,7.0,1.000,10,10
+  age= 7.0 y :  10/10 = 100.0%
+CSV,age,10.0,1.000,10,10
+  age=10.0 y :  10/10 = 100.0%
+CSV,age,15.0,1.000,10,10
+  age=15.0 y :  10/10 = 100.0%
+CSV,age,20.0,1.000,10,10
+  age=20.0 y :  10/10 = 100.0%
+# --- aging x temperature grid (3 attempts per cell) ---
+CSV,age_temp,0,-20,1.000
+  age=   0 y T= -20.0 C : 3/3
+CSV,age_temp,0,25,1.000
+  age=   0 y T=  25.0 C : 3/3
+CSV,age_temp,0,70,1.000
+  age=   0 y T=  70.0 C : 3/3
+CSV,age_temp,0,85,1.000
+  age=   0 y T=  85.0 C : 3/3
+CSV,age_temp,0,105,1.000
+  age=   0 y T= 105.0 C : 3/3
+CSV,age_temp,5,-20,1.000
+  age=   5 y T= -20.0 C : 3/3
+CSV,age_temp,5,25,1.000
+  age=   5 y T=  25.0 C : 3/3
+CSV,age_temp,5,70,1.000
+  age=   5 y T=  70.0 C : 3/3
+CSV,age_temp,5,85,1.000
+  age=   5 y T=  85.0 C : 3/3
+CSV,age_temp,5,105,1.000
+  age=   5 y T= 105.0 C : 3/3
+CSV,age_temp,10,-20,1.000
+  age=  10 y T= -20.0 C : 3/3
+CSV,age_temp,10,25,1.000
+  age=  10 y T=  25.0 C : 3/3
+CSV,age_temp,10,70,1.000
+  age=  10 y T=  70.0 C : 3/3
+CSV,age_temp,10,85,1.000
+  age=  10 y T=  85.0 C : 3/3
+CSV,age_temp,10,105,1.000
+  age=  10 y T= 105.0 C : 3/3
+CSV,age_temp,15,-20,1.000
+  age=  15 y T= -20.0 C : 3/3
+CSV,age_temp,15,25,1.000
+  age=  15 y T=  25.0 C : 3/3
+CSV,age_temp,15,70,1.000
+  age=  15 y T=  70.0 C : 3/3
+CSV,age_temp,15,85,1.000
+  age=  15 y T=  85.0 C : 3/3
+CSV,age_temp,15,105,1.000
+  age=  15 y T= 105.0 C : 3/3
+# ATTACKS
+CSV,clone_accept,0.0000,0,50
+  clone attempts: 0/50 accepted (credential recovered)
+CSV,tamper_false_accept,0.0000,0,500
+  single-bit helper tampering: 0/500 unlocked with the true credential
+CSV,lockout_attempts,16
+  ratchet lockout after 16 tamper attempts (threshold 32)
+CSV,offline_guess_bits,282
+  offline key-guess work bound: 2^282 (K_raw) vs 2^128 tag, so 2^128 work
+CSV,ct_tamper_detected,1
+  ciphertext tamper detected: yes
+# DESIGN SWEEP (secret bits vs reliability)
+# columns: t,k,blocks,secret_bits,T85,age10_25C,age10_T85,age20_T125
+CSV,sweep,12,163,6,978,1.000,1.000,1.000,0.000
+  t=12 k=163 blocks=6 secret= 978 bits | T85 100% age10 100% age10+T85 100% age20+T125   0%
+CSV,sweep,16,131,6,786,1.000,1.000,1.000,0.000
+  t=16 k=131 blocks=6 secret= 786 bits | T85 100% age10 100% age10+T85 100% age20+T125   0%
+CSV,sweep,20,115,6,690,1.000,1.000,1.000,0.000
+  t=20 k=115 blocks=6 secret= 690 bits | T85 100% age10 100% age10+T85 100% age20+T125   0%
+CSV,sweep,24,91,6,546,1.000,1.000,1.000,0.000
+  t=24 k= 91 blocks=6 secret= 546 bits | T85 100% age10 100% age10+T85 100% age20+T125   0%
+CSV,sweep,28,71,6,426,1.000,1.000,1.000,0.100
+  t=28 k= 71 blocks=6 secret= 426 bits | T85 100% age10 100% age10+T85 100% age20+T125  10%
+CSV,sweep,32,47,6,282,1.000,1.000,1.000,0.500
+  t=32 k= 47 blocks=6 secret= 282 bits | T85 100% age10 100% age10+T85 100% age20+T125  50%
+CSV,sweep,40,47,6,282,1.000,1.000,1.000,1.000
+  t=40 k= 47 blocks=6 secret= 282 bits | T85 100% age10 100% age10+T85 100% age20+T125 100%
+CSV,sweep,46,29,6,174,1.000,1.000,1.000,1.000
+  t=46 k= 29 blocks=6 secret= 174 bits | T85 100% age10 100% age10+T85 100% age20+T125 100%
+# RELIABILITY BOUNDS (enrolled new, multi-chip, 50% success crossing)
+# columns: t,secret_bits,enrolled_chips,max_temp_C,max_age_y
+CSV,bounds,12,978,8,130,15
+  t=12 secret= 978 bits | chips=8 | max T=130 C | max age=15 y
+CSV,bounds,16,786,8,130,15
+  t=16 secret= 786 bits | chips=8 | max T=130 C | max age=15 y
+CSV,bounds,20,690,8,145,25
+  t=20 secret= 690 bits | chips=8 | max T=145 C | max age=25 y
+CSV,bounds,24,546,8,145,30
+  t=24 secret= 546 bits | chips=8 | max T=145 C | max age=30 y
+CSV,bounds,28,426,8,160,35
+  t=28 secret= 426 bits | chips=8 | max T=160 C | max age=35 y
+CSV,bounds,32,282,8,175,45
+  t=32 secret= 282 bits | chips=8 | max T=175 C | max age=45 y
+CSV,bounds,40,282,8,175,55
+  t=40 secret= 282 bits | chips=8 | max T=175 C | max age=55 y
+# BASELINE vs STABLE-SUBSET (8 chips x 5 trials per cell)
+# columns: design,t,secret_bits,T85,age10_25C,age20_25C,age10_T85
+CSV,baseline,naive,20,920,0.000,0.025,0.000,0.000
+  naive  t=20 secret= 920 bits | T85   0.0% | age10   2.5% | age20   0.0% | age10+T85   0.0%
+CSV,baseline,stable,20,690,0.800,0.975,1.000,0.750
+  stable t=20 secret= 690 bits | T85  80.0% | age10  97.5% | age20 100.0% | age10+T85  75.0%
+CSV,baseline,naive,32,376,0.150,0.625,0.475,0.000
+  naive  t=32 secret= 376 bits | T85  15.0% | age10  62.5% | age20  47.5% | age10+T85   0.0%
+CSV,baseline,stable,32,282,1.000,1.000,1.000,1.000
+  stable t=32 secret= 282 bits | T85 100.0% | age10 100.0% | age20 100.0% | age10+T85 100.0%
+# SPEC ENVELOPE: -20..70 C x 2.9..3.5 V x 0..10 y, 30 chips x 10 trials/cell
+# columns: t,secret_bits,success_rate,total
+CSV,envelope,20,690,1.00000,13500
+  t=20 secret= 690 bits | spec-envelope success = 100.000% (13500/13500)
+CSV,envelope,24,546,1.00000,13500
+  t=24 secret= 546 bits | spec-envelope success = 100.000% (13500/13500)
+CSV,envelope,28,426,1.00000,13500
+  t=28 secret= 426 bits | spec-envelope success = 100.000% (13500/13500)
+CSV,envelope,32,282,1.00000,13500
+  t=32 secret= 282 bits | spec-envelope success = 100.000% (13500/13500)
+# EXTREME BOUNDARIES (t=32, beyond rated envelope)
+CSV,extreme_temp,-80,1.00
+  T=   -80 C : 10/10
+CSV,extreme_temp,-60,1.00
+  T=   -60 C : 10/10
+CSV,extreme_temp,-40,1.00
+  T=   -40 C : 10/10
+CSV,extreme_temp,0,1.00
+  T=     0 C : 10/10
+CSV,extreme_temp,125,1.00
+  T=   125 C : 10/10
+CSV,extreme_temp,150,1.00
+  T=   150 C : 10/10
+CSV,extreme_temp,175,1.00
+  T=   175 C : 10/10
+CSV,extreme_temp,200,0.00
+  T=   200 C : 0/10
+CSV,extreme_temp,225,0.00
+  T=   225 C : 0/10
+CSV,extreme_age,10,1.00
+  age=  10 y : 10/10
+CSV,extreme_age,20,1.00
+  age=  20 y : 10/10
+CSV,extreme_age,30,1.00
+  age=  30 y : 10/10
+CSV,extreme_age,40,0.40
+  age=  40 y : 4/10
+CSV,extreme_age,50,0.00
+  age=  50 y : 0/10
+CSV,extreme_age,60,0.00
+  age=  60 y : 0/10
+# DIAGNOSTICS
+CSV,read_flip_rate,0.0080
+  same-condition single-read flip rate = 0.80%
+CSV,interchip_hd,50.05,190
+  mean inter-chip HD = 50.05% over 190 pairs
+CSV,volatile_fraction,0.219
+  volatile set = 448/2048 = 21.9%
+CSV,volatile_recall,0,0.986,72,73
+  T=    0 err= 73 in-volatile= 72 (99% recall)
+CSV,volatile_recall,25,0.875,7,8
+  T=   25 err=  8 in-volatile=  7 (88% recall)
+CSV,volatile_recall,45,0.986,73,74
+  T=   45 err= 74 in-volatile= 73 (99% recall)
+CSV,volatile_recall,65,1.000,138,138
+  T=   65 err=138 in-volatile=138 (100% recall)
+CSV,volatile_recall,85,0.995,191,192
+  T=   85 err=192 in-volatile=191 (99% recall)
+CSV,volatile_recall,105,0.988,242,245
+  T=  105 err=245 in-volatile=242 (99% recall)
+CSV,volatile_recall,125,0.832,258,310
+  T=  125 err=310 in-volatile=258 (83% recall)
+# naive blocks=8 t=32
+CSV,naive_block_err,25,0,1,4
+  T=   25 naive errors/block min= 0 med= 1 max= 4
+CSV,naive_block_err,85,17,25,28
+  T=   85 naive errors/block min=17 med=25 max=28
+CSV,naive_block_err,105,19,33,37
+  T=  105 naive errors/block min=19 med=33 max=37
+CSV,naive_block_err,125,26,39,48
+  T=  125 naive errors/block min=26 med=39 max=48
